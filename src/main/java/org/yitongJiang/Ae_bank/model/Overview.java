@@ -2,13 +2,13 @@ package org.yitongJiang.Ae_bank.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Setter
+@Getter
 @Entity
 public class Overview {
 
@@ -61,53 +61,9 @@ public class Overview {
     @Column(name = "dividend_date",nullable = false)
     private String dividendDate;
 
-    public long getId() {
-        return Id;
-    }
 
-    public String getSymbol() {
-        return symbol;
-    }
 
-    public String getAssetType() {
-        return assetType;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getExchange() {
-        return exchange;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public String getSector() {
-        return sector;
-    }
-
-    public String getIndustry() {
-        return industry;
-    }
-
-    public long getMarketCap() {
-        return marketCap;
-    }
-
-    public float getYearLow() {
-        return yearLow;
-    }
-
-    public String getDividendDate() {
-        return dividendDate;
-    }
 
     @Override
     public String toString() {

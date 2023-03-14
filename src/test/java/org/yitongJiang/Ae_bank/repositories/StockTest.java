@@ -4,8 +4,6 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.yitongJiang.Ae_bank.model.CheckingAccount;
-import org.yitongJiang.Ae_bank.model.Loan;
 import org.yitongJiang.Ae_bank.model.Overview;
 
 import java.util.List;
@@ -19,7 +17,7 @@ public class StockTest {
 
 
     @Test
-    public void getListOfCheckingTest(){
+    public void getListOfTest(){
         List<Overview> overviews = repository.findAll();
         Assertions.assertThat(overviews.size()).isGreaterThan(0);
     }
